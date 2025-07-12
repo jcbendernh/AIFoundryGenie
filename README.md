@@ -7,6 +7,7 @@ AIFoundryGenie is a Python-based framework designed to facilitate the creation, 
 Before using AIFoundryGenie, ensure you have:
 
 - **Python 3.8+** installed on your system
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/?view=azure-cli-latest) installed on your system.
 - **Databricks workspace** with access to Genie Spaces.  <BR>For more information check out [Set up and manage an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/set-up)
 - An Azure AI Foundry Project created.  <BR>For more information check out [Create a project for Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/create-projects?tabs=ai-foundry&pivots=fdp-project).
 - A Databricks Connected Resource created in the AI Foundry Project.  <BR>For more information check out [How to add a new connection in Azure AI Foundry portal](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/connections-add?pivots=fdp-project)
