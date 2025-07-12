@@ -39,10 +39,10 @@ os.environ["DATABRICKS_SDK_UPSTREAM_VERSION"] = "1.0.0"
 DATABRICKS_ENTRA_ID_AUDIENCE_SCOPE = "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default" 
 # Well known Entra ID audience for Azure Databricks - https://learn.microsoft.com/en-us/azure/databricks/dev-tools/auth/user-aad-token
 
-FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>"
-FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY_DATABRICKS_CONNECTION_NAME>"
+FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>" # Example: https://<your-project-name>.ai.azure.com/projects/<your-project-id>
+FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY_DATABRICKS_CONNECTION_NAME>" # Example: "my-databricks-connection"
 
-GENIE_QUESTION = "What is the average tip amount on a Friday?"
+GENIE_QUESTION = "What is the average tip amount on a Friday?" # Example question to ask Genie
 
 ##################
 # Utility functions
@@ -107,9 +107,10 @@ with project_client:
     project_client.agents.enable_auto_function_calls(toolset)
 
     agent = project_client.agents.create_agent(
-        model='<MODEL DEPLOYMENT NAME>',
-        name="Databricks Agent 2",
-        instructions="You're an helpful assistant, use the Databricks Genie to answer questions.  Always use the ask_genie function for data queries and then provide a clear, helpful interpretation of the results to the user.",
+        model='<MODEL DEPLOYMENT NAME>', # Example: "gpt-4o"
+        name="Databricks Agent", # Name of the agent
+        description="An agent that uses Databricks Genie to answer questions.",
+        instructions="You're a helpful assistant, use the Databricks Genie to answer questions.  Always use the ask_genie function for data queries and then provide a clear, helpful interpretation of the results to the user.",
         toolset=toolset,
     )
 

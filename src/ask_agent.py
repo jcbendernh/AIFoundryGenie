@@ -13,9 +13,9 @@ from typing import Any, Callable, Set
 os.environ["DATABRICKS_SDK_UPSTREAM"] = "AzureAIFoundry"
 os.environ["DATABRICKS_SDK_UPSTREAM_VERSION"] = "1.0.0"
 
-FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>"
-FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY_DATABRICKS_CONNECTION_NAME>"
-AGENT_ID = "<FOUNDRY AGENT ID>"
+FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>" # e.g., "https://<your-foundry-instance>.azure.ai/projects/<project-id>"
+FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY DATABRICKS CONNECTION NAME>"  # e.g., "my-databricks-connection"
+AGENT_ID = "<FOUNDRY AGENT ID>" # The ID of the agent you want to interact with, e.g., "asst_ABCdefghijkl12345678910"
 DATABRICKS_ENTRA_ID_AUDIENCE_SCOPE = "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.default"
 
 # Global Genie instance for function calling
