@@ -2,8 +2,10 @@
 
 AIFoundryGenie is a Python-based framework designed to facilitate the creation, management, and execution of AI agents that are connected to a Databricks Genie Space. 
 
-## Prerequisites
+## Overview 
+User Input → Script → Azure AI Agent → Databricks Genie → Database Query → Results → Formatted Response → User
 
+## Prerequisites
 Before using AIFoundryGenie, ensure you have:
 
 - **Python 3.8+** installed on your system
@@ -19,7 +21,6 @@ Before using AIFoundryGenie, ensure you have:
 - Proper permissions to query data through Genie
 
 ## Summary
-
 This repository includes:
 - [`sample_agent_adb_genie.py`](src/sample_agent_adb_genie.py) - A sample AI agent that:
   - Connects to Databricks Genie through Azure AI Foundry
@@ -35,10 +36,10 @@ This repository includes:
   - Enables terminal-based agent interactions for testing and development
 
 ## Getting Started
-
 I highly suggest forking this repo and then using Visual Studio Code with the [Azure AI Foundry extension](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/get-started-projects-vs-code) installed for the best development experience.
 
 This repo based off of the Python scripts for [`Azure-Samples /
 AI-Foundry-Connections`](https://github.com/Azure-Samples/AI-Foundry-Connections/tree/main)
+
 
 
