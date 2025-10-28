@@ -20,7 +20,7 @@ USAGE:
        in your Azure AI Foundry project.
     2) FOUNDRY_DATABRICKS_CONNECTION_NAME - The name of the Databricks connection, as found in the "Connected Resources" under "Management Center" tab
        in your Azure AI Foundry project.
-    2) MODEL_DEPLOYMENT_NAME - The deployment name of the AI model, as found under the "Name" column in 
+    3) MODEL_DEPLOYMENT_NAME - The deployment name of the AI model, as found under the "Name" column in 
        the "Models + endpoints" tab in your Azure AI Foundry project.
 """
 
@@ -41,6 +41,7 @@ DATABRICKS_ENTRA_ID_AUDIENCE_SCOPE = "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.defa
 
 FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>" # Example: https://<your-project-name>.ai.azure.com/projects/<your-project-id>
 FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY_DATABRICKS_CONNECTION_NAME>" # Example: "my-databricks-connection"
+MODEL_DEPLOYMENT_NAME = "<MODEL DEPLOYMENT NAME>", # Example: "gpt-4o"
 
 GENIE_QUESTION = "What is the average tip amount on a Friday?" # Example question to ask Genie
 
@@ -107,7 +108,7 @@ with project_client:
     project_client.agents.enable_auto_function_calls(toolset)
 
     agent = project_client.agents.create_agent(
-        model='<MODEL DEPLOYMENT NAME>', # Example: "gpt-4o"
+        model=MODEL_DEPLOYMENT_NAME, 
         name="Databricks Agent", # Name of the agent
         description="An agent that uses Databricks Genie to answer questions.",
         instructions="You're a helpful assistant, use the Databricks Genie to answer questions.  Always use the ask_genie function for data queries and then provide a clear, helpful interpretation of the results to the user.",
