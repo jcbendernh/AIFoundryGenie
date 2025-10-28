@@ -41,7 +41,7 @@ DATABRICKS_ENTRA_ID_AUDIENCE_SCOPE = "2ff814a6-3304-4ab8-85cb-cd0e6f879c1d/.defa
 
 FOUNDRY_PROJECT_ENDPOINT = "<FOUNDRY PROJECT ENDPOINT>" # Example: https://<your-project-name>.ai.azure.com/projects/<your-project-id>
 FOUNDRY_DATABRICKS_CONNECTION_NAME = "<FOUNDRY_DATABRICKS_CONNECTION_NAME>" # Example: "my-databricks-connection"
-MODEL_DEPLOYMENT_NAME = "<MODEL DEPLOYMENT NAME>", # Example: "gpt-4o"
+MODEL_DEPLOYMENT_NAME = "<MODEL DEPLOYMENT NAME>" # Example: "gpt-4o"
 
 GENIE_QUESTION = "What is the average tip amount on a Friday?" # Example question to ask Genie
 
