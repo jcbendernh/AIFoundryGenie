@@ -36,7 +36,7 @@ This repository includes:
   - Enables terminal-based agent interactions for testing and development
 
 ## Getting Started
-I highly suggest cloning this repo locally and then using Visual Studio Code with the [Azure AI Foundry extension](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/get-started-projects-vs-code) installed for the best development experience.
+I recommend cloning this repo locally and then using Visual Studio Code with the [Azure AI Foundry extension](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/get-started-projects-vs-code) installed for the best development experience.
 
 Here is some sample code to clone locally.
 ```
@@ -45,3 +45,4 @@ git clone https://github.com/jcbendernh/AIFoundryGenie.git  C:\VSCode\AIFoundryG
 
 This repo based off of the Python scripts for [`Azure-Samples /
 AI-Foundry-Connections`](https://github.com/Azure-Samples/AI-Foundry-Connections/tree/main)
+
